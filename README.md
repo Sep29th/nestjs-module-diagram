@@ -11,7 +11,7 @@ Pretty straightforward installation:
 ```sh
 npm i nestjs-module-diagram
 yarn add nestjs-module-diagram
-pnpm i nestjs-module-diagram
+pnpm add nestjs-module-diagram
 ```
 
 ## Exploration Mode
