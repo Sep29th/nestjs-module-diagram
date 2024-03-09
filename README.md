@@ -254,15 +254,15 @@ graph LR
 
 If you use vscode, just install `Markdown Preview Mermaid Support` extension: 
 
-<img src="./public/Extension.png" alt="Extension">
+<img src="https://raw.githubusercontent.com/Sep29th/nestjs-module-diagram/main/public/Extension.png" alt="Extension">
 
 Open `graph.md` file and use this:
 
-<img src="./public/Use.png" alt="Use">
+<img src="https://raw.githubusercontent.com/Sep29th/nestjs-module-diagram/main/public/Use.png" alt="Use">
 
 And enjoy your result:
 
-<img src="./public/Result.png" alt="Result">
+<img src="https://raw.githubusercontent.com/Sep29th/nestjs-module-diagram/main/public/Result.png" alt="Result">
 
 The edges can certainly be transformed into formats more suitable for other visualization tools. And the graph can be traversed with other strategies.
 
