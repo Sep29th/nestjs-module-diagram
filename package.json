@@ -1,6 +1,6 @@
 {
   "name": "nestjs-module-diagram",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A NestJS Module to do a deep dive through the dependency tree structure and print the dependencies. (I change peerDependency)",
   "author": {
     "name": "sep29th",

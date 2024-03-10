@@ -201,6 +201,8 @@ Assume you have the sample output of the above `explore` section in a variable c
 
 Create `src/graph.ts` file:
 ```ts
+import * as fs from 'fs-extra';
+
 async function bootstrap(): Promise<void> {
     const app: INestApplication = await NestFactory.create(AppModule, { logger: false });
     const tree = DiagramModule.explore(app);
