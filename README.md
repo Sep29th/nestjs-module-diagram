@@ -2,7 +2,7 @@
 
 ## Description
 
-This module does a bit of a dive through the provided module and reads through the dependency tree from the point of entry given. It will find what a module `imports`, `provides`, has `controllers` for, and `exports` and will recursively search through the dependency tree until all modules have been scanned. For `providers` if there is a custom provider, the Spelunker will do its best to determine if Nest is to use a value, a class/standard, or a factory, and if a factory, what value is to be injected.
+This module does a bit of a dive through the provided module and reads through the dependency tree from the point of entry given. It will find what a module `imports`, `provides`, has `controllers` for, and `exports` and will recursively search through the dependency tree until all modules have been scanned. For `providers` if there is a custom provider, the Diagram will do its best to determine if Nest is to use a value, a class/standard, or a factory, and if a factory, what value is to be injected.
 
 ## Installation
 
@@ -18,7 +18,7 @@ pnpm add nestjs-module-diagram
 
 ### Exploration Usage
 
-Much like the [`SwaggerModule`](https://github.com/nestjs/swagger), the `DiagramModule` is not a module that you register within Nest's DI system, but rather use after the DI system has done all the heavy lifting. Simple usage of the Spelunker could be like:
+Much like the [`SwaggerModule`](https://github.com/nestjs/swagger), the `DiagramModule` is not a module that you register within Nest's DI system, but rather use after the DI system has done all the heavy lifting. Simple usage of the Diagram could be like:
 
 ```ts
 // ...
@@ -58,13 +58,13 @@ Given the following source code
 // main.ts
 import * as util from 'util'
 import { NestFactory } from '@nestjs/core'
-import { SpelunkerModule } from 'nestjs-spelunker'
+import { DiagramModule } from 'nestjs-module-diagram'
 import { AppModule } from './app.module'
 
 async function bootstrap() {
   const app = await NestFactory.createApplicationContext(AppModule, { logger: false })
   console.log(
-    util.inspect( SpelunkerModule.explore(app), { depth: Infinity, colors: true } )
+    util.inspect( DiagramModule.explore(app), { depth: Infinity, colors: true } )
   )
 }
 bootstrap();
